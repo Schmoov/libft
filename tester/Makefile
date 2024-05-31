@@ -24,10 +24,10 @@ ASAN_ENV := ASAN_OPTIONS=log_path=$(LOG_DIR):abort_on_error=1:allocator_may_retu
 all: $(LIBFT) test
 
 $(LIBFT):
-	make -C ../libft all
-	make -C ../libft bonus
-	cp ../libft/libft.a ./
-	cp ../libft/libft.h ./
+	make -C ../ all
+	make -C ../ bonus
+	cp ../libft.a ./
+	cp ../libft.h ./
 
 test: $(OBJS) $(TSTS)
 
