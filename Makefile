@@ -43,4 +43,7 @@ re: fclean all
 
 rebonus : fclean bonus
 
-.PHONY: all clean fclean re bonus rebonus
+rfclean : fclean
+	make -C tester_libft fclean
+
+.PHONY: all clean fclean re bonus rebonus rfclean
