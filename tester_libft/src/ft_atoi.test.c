@@ -35,14 +35,14 @@ Test(atoi, basic)
 	cr_assert_eq(atoi(" + 1"), ft_atoi(" + 1"));
 	cr_assert_eq(atoi("0000000000000000000000000"), ft_atoi("0000000000000000000000000"));
 }
-
+/*
 Test(atoi, normie_edition)
 {
 	cr_assert_eq(0, ft_atoi("2147483648"));
 	cr_assert_eq(0, ft_atoi("-2147483649"));
 	cr_assert_eq(0, ft_atoi("999999999999999999999999999999999"));
 }
-/*
+*/
 Test(atoi, WAY, .signal=SIGSEGV)
 {
 	cr_assert_eq(0, ft_atoi("2147483648"));
@@ -57,4 +57,4 @@ Test(atoi, SAMURAI, .signal=SIGSEGV)
 {
 	cr_assert_eq(0, ft_atoi("999999999999999999999999999999999"));
 }
-*/
+

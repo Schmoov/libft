@@ -1,4 +1,4 @@
-CC := gcc
+CC := cc
 CFLAGS := -Wall -Wextra -Werror
 
 SRC_DIR := src/
@@ -10,10 +10,9 @@ OBJS := $(patsubst $(SRC_DIR)%.c, $(BIN_DIR)%.o, $(SRCS))
 TST_DIR := tests/
 TSTS := $(patsubst $(BIN_DIR)%.o, $(TST_DIR)%, $(OBJS))
 
-LIBFT := libft.h libft.a
+CRIT := -lcriterion
 
-CRIT := -L criterion -lcriterion
-CRIT_ENV := LD_LIBRARY_PATH=criterion
+LIBFT := libft.h libft.a
 
 ASAN := -fsanitize=address
 LOG_DIR := .logs/
@@ -43,11 +42,11 @@ $(TST_DIR)%.test: $(BIN_DIR)%.test.o
 	@ mkdir -p $(TST_DIR)
 	@ mkdir -p $(LOG_DIR)
 	$(CC) $(CFLAGS) $< libft.a $(CRIT) -lbsd -o $@
-	$(CRIT_ENV) ./$@
+	 ./$@
 
 $(TST_DIR)%.memtest: $(BIN_DIR)%.memtest.o
 	$(CC) $(CFLAGS) $(ASAN) $< libft.a $(CRIT) -lbsd -o $@
-	$(ASAN_ENV) $(CRIT_ENV) ./$@
+	$(ASAN_ENV)  ./$@
 
 print-%  : ; @echo $* = $($*)
 

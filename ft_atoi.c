@@ -12,8 +12,7 @@
 
 #include "libft.h"
 
-//Id rather have it crash on overflow but man hints strongly as 0 as error
-/*
+//Id rather have it crash on overflow 
 static int	ft_seppuku(void)
 {
 	int	*katana;
@@ -21,7 +20,7 @@ static int	ft_seppuku(void)
 	katana = NULL;
 	return(*katana);
 }
-*/
+
 static bool	is_int(long long n)
 {
 	return (n <= INT_MAX && n >= INT_MIN);
@@ -57,6 +56,6 @@ int	ft_atoi(const char *nptr)
 	}
 	res *= sign;
 	if (!is_int(res))
-		res = 0;
+		ft_seppuku();
 	return (res);
 }
