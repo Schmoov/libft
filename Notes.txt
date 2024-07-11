@@ -1,6 +1,3 @@
 Substr with start > strlen is UB
 Atoi crashes on overflow
 errno still illegal...
-
-
-Custom :	o is_in->untested
