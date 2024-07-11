@@ -4,7 +4,6 @@ CC := cc
 CFLAGS := -Wall -Wextra -Werror 
 
 SRC := $(wildcard src/**/*.c)
-INCS := libft.h
 
 OBJ_DIR := .bin/
 OBJ := $(patsubst src/%.c, $(OBJ_DIR)%.o, $(SRC))
