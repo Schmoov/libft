@@ -163,7 +163,7 @@ Test(printing, francinette_print_NUL_char)
 	cr_redirect_stdout();
 	res = ft_printf(str,'0',0,'1','2','1',0,0,'1','2');
 	fflush(stdout);
-	FILE *expected_output = fopen("src/francinette_cspec.txt", "r");
+	FILE *expected_output = fopen("test/txt/francinette_cspec.txt", "r");
 	cr_expect_stdout_eq(expected_output);
 	fclose(expected_output);
 	cr_expect_eq(res, 25);
