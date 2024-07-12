@@ -24,7 +24,7 @@ ASAN_ENV := ASAN_OPTIONS=log_path=$(LOG_DIR):abort_on_error=1:allocator_may_retu
 
 all: $(NAME)
 
-test: $(TEST_OBJ) $(TEST_BIN)
+test: $(NAME) $(TEST_OBJ) $(TEST_BIN)
 
 $(NAME): $(OBJ)
 	ar rcs $@ $?
@@ -42,13 +42,13 @@ $(OBJ_DIR)%.memtest.o: $(TEST_SRC_DIR)%.memtest.c
 	@ mkdir -p $(OBJ_DIR)
 	$(CC) $(CFLAGS) $(ASAN) -c $< -o $@
 
-$(TEST_BIN_DIR)%.test: $(BIN_DIR)%.test.o
+$(TEST_BIN_DIR)%.test: $(OBJ_DIR)%.test.o
 	@ mkdir -p $(TEST_BIN_DIR)
 	@ mkdir -p $(LOG_DIR)
 	$(CC) $(CFLAGS) $< libft.a $(CRIT) -lbsd -o $@
 	 ./$@
 
-$(TST_DIR)%.memtest: $(BIN_DIR)%.memtest.o
+$(TEST_BIN_DIR)%.memtest: $(OBJ_DIR)%.memtest.o
 	@ mkdir -p $(TEST_BIN_DIR)
 	@ mkdir -p $(LOG_DIR)
 	$(CC) $(CFLAGS) $(ASAN) $< libft.a $(CRIT) -lbsd -o $@
@@ -57,12 +57,18 @@ $(TST_DIR)%.memtest: $(BIN_DIR)%.memtest.o
 clean:
 	rm -rf $(OBJ_DIR)
 
-fclean: clean
+tclean:
+	rm -f $(TEST_OBJ)
+	rm -rf $(LOG_DIR)
 	rm -rf $(TEST_BIN_DIR)
+
+fclean: clean tclean
 	rm -f $(NAME)
 
-re: fclean all
+re: fclean tclean all
+
+tre: tclean test
 
 print-%  : ; @echo $* = $($*)
 
-.PHONY: all test clean fclean re
+.PHONY: all test clean tclean fclean re tre
