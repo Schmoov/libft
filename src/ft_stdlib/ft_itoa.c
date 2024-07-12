@@ -11,7 +11,7 @@
 /* ************************************************************************** */
 
 #include <stdlib.h>
-#include "libft.h"
+#include "include/libft.h"
 
 static size_t	count_char(int n)
 {

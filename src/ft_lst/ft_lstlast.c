@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "include/libft.h"
 
 //lst == NULL represents an empty list
 t_list	*ft_lstlast(t_list *lst)

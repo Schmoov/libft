@@ -3,7 +3,7 @@
 #include <limits.h>
 #include <signal.h>
 #include <criterion/criterion.h>
-#include "libft.h"
+#include "include/libft.h"
 
 bool strict_sign(int a, int b)
 {

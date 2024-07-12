@@ -1,7 +1,7 @@
 #include <criterion/criterion.h>
 #include <stdlib.h>
 #include <ctype.h>
-#include "libft.h"
+#include "include/libft.h"
 
 void change_sign(void *val)
 {

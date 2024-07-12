@@ -1,5 +1,5 @@
 #include <criterion/criterion.h>
-#include "libft.h"
+#include "include/libft.h"
 
 Test(strjoin, basics)
 {

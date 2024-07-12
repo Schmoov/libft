@@ -1,6 +1,6 @@
 #include <criterion/criterion.h>
 #include <stdlib.h>
-#include "libft.h"
+#include "include/libft.h"
 
 void	no_op(void *osef)
 {

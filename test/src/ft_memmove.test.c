@@ -3,7 +3,7 @@
 #include <limits.h>
 #include <signal.h>
 #include <criterion/criterion.h>
-#include "libft.h"
+#include "include/libft.h"
 
 Test(memmove, basic_strings)
 {

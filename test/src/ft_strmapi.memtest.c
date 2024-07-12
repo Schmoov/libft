@@ -1,6 +1,6 @@
 #include <criterion/criterion.h>
 #include <ctype.h>
-#include "libft.h"
+#include "include/libft.h"
 
 char f1(unsigned int i, char c)
 {

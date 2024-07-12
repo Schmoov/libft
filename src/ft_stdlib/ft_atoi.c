@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "include/libft.h"
 
 //Id rather have it crash on overflow 
 static int	ft_seppuku(void)
@@ -18,7 +18,7 @@ static int	ft_seppuku(void)
 	int	*katana;
 
 	katana = NULL;
-	return(*katana);
+	return (*katana);
 }
 
 static bool	is_int(long long n)
