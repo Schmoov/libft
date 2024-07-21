@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "include/ft_printf.h"
+#include "libft.h"
 
 size_t	free_token_strs(char **token_strs)
 {

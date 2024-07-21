@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "include/ft_printf.h"
+#include "libft.h"
 
 int	c_printer(t_token *tok, int n)
 {

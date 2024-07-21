@@ -4,7 +4,7 @@
 #include <stdio.h>
 #include <limits.h>
 #include <fcntl.h>
-#include "include/libft.h"
+#include "libft.h"
 
 Test(putchar_fd, Write_all_chars_in_a_file)
 {

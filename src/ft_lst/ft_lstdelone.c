@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "include/libft.h"
+#include "libft.h"
 #include <stdlib.h>
 
 //lst == NULL is not a valid element to free

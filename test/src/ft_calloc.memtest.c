@@ -17,7 +17,7 @@
 #include <stddef.h>
 #include <criterion/criterion.h>
 #include <sanitizer/lsan_interface.h>
-#include "include/libft.h"
+#include "libft.h"
 #include <errno.h>
 #include <signal.h>
 

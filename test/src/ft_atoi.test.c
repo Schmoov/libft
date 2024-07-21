@@ -15,7 +15,7 @@
 #include <stddef.h>
 #include <signal.h>
 #include <criterion/criterion.h>
-#include "include/libft.h"
+#include "libft.h"
 
 Test(atoi, basic)
 {

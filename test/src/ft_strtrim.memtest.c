@@ -1,4 +1,4 @@
-#include "include/libft.h"
+#include "libft.h"
 #include <criterion/criterion.h>
 #include <signal.h>
 #include <string.h>

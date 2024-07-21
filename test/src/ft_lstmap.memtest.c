@@ -1,7 +1,7 @@
 #include <criterion/criterion.h>
 #include <stdlib.h>
 #include <ctype.h>
-#include "include/libft.h"
+#include "libft.h"
 /*
 void	*trim_first_letter(void *val)
 {
@@ -77,7 +77,7 @@ Test(lstiter, ints)
 
 #include <criterion/criterion.h>
 #include <ctype.h>
-#include "../../include/libft.h"
+#include "../../libft.h"
 
 char f1(unsigned int i, char c)
 {

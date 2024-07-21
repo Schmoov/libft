@@ -3,7 +3,7 @@
 #include <limits.h>
 #include <signal.h>
 #include <criterion/criterion.h>
-#include "include/libft.h"
+#include "libft.h"
 
 Test(strchr, find_the_D)
 {

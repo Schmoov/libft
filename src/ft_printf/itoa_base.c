@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "include/ft_printf.h"
+#include "libft.h"
 
 //Output string will NOT have '-' character !!!
 static size_t	count_char(long long n, size_t lbase)

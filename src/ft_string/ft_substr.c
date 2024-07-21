@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "include/libft.h"
+#include "libft.h"
 #include <stdlib.h>
 
 //Behaviour is undefined for start > strlen(s)

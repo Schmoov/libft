@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "include/libft.h"
+#include "libft.h"
 
 //memcpy but right to left
 static void	*ft_memrcpy(void *dest, const void *src, size_t n)

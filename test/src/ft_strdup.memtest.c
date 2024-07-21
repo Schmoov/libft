@@ -18,7 +18,7 @@
 #include <signal.h>
 #include <sanitizer/lsan_interface.h>
 #include <criterion/criterion.h>
-#include "include/libft.h"
+#include "libft.h"
 
 Test(strdup, basic)
 {

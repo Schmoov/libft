@@ -4,7 +4,7 @@
 #include <stdio.h>
 #include <limits.h>
 #include <fcntl.h>
-#include "include/libft.h"
+#include "libft.h"
 
 Test(putendl_fd, putendl_in_file)
 {

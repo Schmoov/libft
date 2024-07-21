@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "include/libft.h"
+#include "libft.h"
 
 static bool	is_match(char *candidate, const char *little, size_t len)
 {

@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "include/get_next_line.h"
+#include "libft.h"
 
 size_t	unload_buffer(char *line, char *buf)
 {

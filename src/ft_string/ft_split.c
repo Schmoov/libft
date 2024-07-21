@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "include/libft.h"
+#include "libft.h"
 #include <stdlib.h>
 
 static void	free_res(char **res)

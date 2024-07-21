@@ -1,6 +1,6 @@
 #include <criterion/criterion.h>
 #include <stdlib.h>
-#include "include/libft.h"
+#include "libft.h"
 
 void	identity(void *osef)
 {

@@ -1,6 +1,6 @@
 #include <criterion/criterion.h>
 #include <stdlib.h>
-#include "include/libft.h"
+#include "libft.h"
 
 void	no_op(void *cont)
 {

@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "include/ft_printf.h"
+#include "libft.h"
 
 void	add_width_blanks(char **toprint, t_token *tok)
 {

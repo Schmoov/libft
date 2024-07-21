@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "include/libft.h"
+#include "libft.h"
 
 //Id rather have it crash on overflow 
 static int	ft_seppuku(void)

@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "include/libft.h"
+#include "libft.h"
 #include <stdlib.h>
 
 static void	*catch_alloc(t_list *lst, void (*del)(void *), void	*maybe_cont)

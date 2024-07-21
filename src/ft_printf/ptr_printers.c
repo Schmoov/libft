@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "include/ft_printf.h"
+#include "libft.h"
 
 static char	*cap_strlen(void *p, t_token *tok)
 {

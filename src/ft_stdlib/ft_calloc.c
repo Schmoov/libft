@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "include/libft.h"
+#include "libft.h"
 #include <stdlib.h>
 
 //Normie edition : Just add the errno line under the SIZE_MAX

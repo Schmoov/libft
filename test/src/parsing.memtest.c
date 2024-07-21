@@ -12,7 +12,7 @@
 
 #include <criterion/criterion.h>
 #include <stdio.h>
-#include "include/ft_printf.h"
+#include "libft.h"
 
 Test(count_tok, mandatory)
 {

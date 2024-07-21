@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "include/libft.h"
+#include "libft.h"
 
 //Technically dstsize==dst_len is a sufficient check
 //since dstsize<dst_len is UB. man does mention the check though...
