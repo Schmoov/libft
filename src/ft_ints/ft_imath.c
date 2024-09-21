@@ -26,11 +26,6 @@ int	ft_imin(int a, int b)
 	return (b);
 }
 
-int ft_imean(int a, int b)
-{
-	return (a / 2 + b / 2 + ((a % 2) + (b % 2)) / 2);
-}
-
 //Beware ft_iabs(INT_MIN) is UB !!!
 int	ft_iabs(int a)
 {
