@@ -74,6 +74,7 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*));
 int		ft_atoi(const char *nptr);
 char	*ft_itoa(int n);
 void	*ft_calloc(size_t nelem, size_t elsize);
+void	ft_free_split(char **split);
 
 //			STDIO
 void	ft_putchar_fd(char c, int fd);
@@ -81,6 +82,12 @@ void	ft_putendl_fd(char *s, int fd);
 void	ft_putnbr_fd(int n, int fd);
 void	ft_putstr_fd(char *s, int fd);
 char	*get_next_line(int fd);
+
+//			MATH
+int		ft_imax(int a, int b);
+int		ft_imin(int a, int b);
+int		ft_imean(int a, int b);
+int		ft_iabs(int a);
 
 //			PRINTF
 //pad can be \0 (right-justify), '-' (left-justify), or '0' (pad with zero)
