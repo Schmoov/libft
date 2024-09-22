@@ -6,7 +6,7 @@
 /*   By: parden <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/21 22:09:22 by parden            #+#    #+#             */
-/*   Updated: 2024/09/22 15:09:53 by parden           ###   ########.fr       */
+/*   Updated: 2024/09/22 15:52:48 by parden           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ int	*ft_ibsearch(int key, int *arr, int size)
 	int	hi;
 	int	mid;
 
-	lo = -1;
+	lo = 0;
 	hi = size;
 	while (hi - lo > 1)
 	{
@@ -28,7 +28,7 @@ int	*ft_ibsearch(int key, int *arr, int size)
 		else
 			lo = mid;
 	}
-	if (lo == -1 || arr[lo] != key)
+	if (arr[lo] != key)
 		return (NULL);
 	return (arr + lo);
 }
