@@ -6,7 +6,7 @@
 /*   By: parden <parden@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/30 11:32:44 by parden            #+#    #+#             */
-/*   Updated: 2024/09/24 18:07:22 by parden           ###   ########.fr       */
+/*   Updated: 2024/09/24 20:14:07 by parden           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,8 +32,10 @@ static char	*parse_base(char **nptr)
 	return (BASE10);
 }
 
-static void	strtoll_init(char **nptr, int *sign, char **base)
+static void	strtoll_init(char **nptr, int *sign, char **base, bool **of)
 {
+	if (*of)
+		**of = false;
 	*sign = 1;
 	while (ft_isspace(**nptr))
 		(*nptr)++;
@@ -47,15 +49,14 @@ static void	strtoll_init(char **nptr, int *sign, char **base)
 }
 
 //The overflow calc is sus AF
-//there might be false positive for values 16 away from 2**64...
-//goudinof
+//but tests are green =]
 static bool	is_overflow(t_ll *res, int digit, int *sign, char *base)
 {
 	int	len;
 
 	len = ft_strlen(base);
 	if ((*sign == 1 && *res > (LLONG_MAX - digit) / len)
-		|| (*sign == -1 && *res - 1 > (LLONG_MAX - digit) / len))
+		|| (*sign == -1 && - *res < (LLONG_MIN + digit) / len))
 	{
 		if (*sign == 1)
 			*res = LLONG_MAX;
@@ -76,7 +77,7 @@ t_ll	ft_strtoll(char *nptr, char **endptr, bool *overflow)
 	int		digit;
 
 	res = 0;
-	strtoll_init(&nptr, &sign, &base);
+	strtoll_init(&nptr, &sign, &base, &overflow);
 	while (ft_isalnum(*nptr) && ft_strchr(base, *nptr))
 	{
 		digit = ft_strchr(base, *nptr) - base;
