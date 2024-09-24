@@ -6,7 +6,7 @@
 /*   By: parden <parden@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/23 12:42:49 by parden            #+#    #+#             */
-/*   Updated: 2024/09/21 22:20:57 by parden           ###   ########.fr       */
+/*   Updated: 2024/09/24 18:07:46 by parden           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,9 @@
 # include <unistd.h>
 # include <fcntl.h>
 # include <stdarg.h>
+
+typedef long long			t_ll;
+typedef unsigned long long	t_ull;
 
 # define SPECIFIERS "cspdiuxX%"
 # define FLAGS "0-+ #"
@@ -71,6 +74,7 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*));
 
 //			STDLIB
 int		ft_atoi(const char *nptr);
+t_ll	ft_strtoll(char *nptr, char **endptr, bool *overflow);
 char	*ft_itoa(int n);
 void	*ft_calloc(size_t nelem, size_t elsize);
 void	ft_free_split(char **split);
