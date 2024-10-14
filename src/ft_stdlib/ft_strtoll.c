@@ -6,7 +6,7 @@
 /*   By: parden <parden@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/30 11:32:44 by parden            #+#    #+#             */
-/*   Updated: 2024/09/24 20:14:07 by parden           ###   ########.fr       */
+/*   Updated: 2024/10/14 20:47:24 by parden           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,9 +22,7 @@ static char	*parse_base(char **nptr)
 {
 	if (**nptr == '0')
 	{
-		if (*(*nptr + 1) == 'X')
-			return (*nptr += 2, UPBASE16);
-		else if (*(*nptr + 1) == 'x')
+		if (ft_tolower(*(*nptr + 1)) == 'x')
 			return (*nptr += 2, LOBASE16);
 		else if (*(*nptr + 1) == 'b')
 			return (*nptr += 2, "01");
@@ -78,9 +76,9 @@ t_ll	ft_strtoll(char *nptr, char **endptr, bool *overflow)
 
 	res = 0;
 	strtoll_init(&nptr, &sign, &base, &overflow);
-	while (ft_isalnum(*nptr) && ft_strchr(base, *nptr))
+	while (ft_isalnum(*nptr) && ft_strchr(base, ft_tolower(*nptr)))
 	{
-		digit = ft_strchr(base, *nptr) - base;
+		digit = ft_strchr(base, ft_tolower(*nptr)) - base;
 		if (is_overflow(&res, digit, &sign, base))
 		{
 			if (overflow)
