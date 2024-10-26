@@ -6,12 +6,12 @@
 /*   By: parden <parden@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/12 10:40:38 by parden            #+#    #+#             */
-/*   Updated: 2024/05/22 16:45:09 by parden           ###   ########.fr       */
+/*   Updated: 2024/10/26 20:34:49 by parden           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stddef.h>
-#include "libft.h"
+#include "../../libft.h"
 
 void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 {

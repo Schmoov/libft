@@ -6,11 +6,11 @@
 /*   By: parden <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/31 16:05:52 by parden            #+#    #+#             */
-/*   Updated: 2024/06/05 14:37:51 by parden           ###   ########.fr       */
+/*   Updated: 2024/10/26 20:34:49 by parden           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../../libft.h"
 
 static char	*cap_strlen(void *p, t_token *tok)
 {

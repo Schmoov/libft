@@ -1,6 +1,6 @@
 #include <criterion/criterion.h>
 #include <stdlib.h>
-#include "libft.h"
+#include "../../libft.h"
 
 Test(lstadd_front, basics)
 {

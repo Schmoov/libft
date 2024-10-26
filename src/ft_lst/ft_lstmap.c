@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstmap_bonus.c                                  :+:      :+:    :+:   */
+/*   ft_lstmap.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: parden <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/18 16:00:46 by parden            #+#    #+#             */
-/*   Updated: 2024/05/23 13:04:53 by parden           ###   ########.fr       */
+/*   Updated: 2024/10/26 20:34:49 by parden           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../../libft.h"
 #include <stdlib.h>
 
 static void	*catch_alloc(t_list *lst, void (*del)(void *), void	*maybe_cont)

@@ -6,11 +6,11 @@
 /*   By: parden <parden@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/30 11:32:44 by parden            #+#    #+#             */
-/*   Updated: 2024/10/14 20:47:24 by parden           ###   ########.fr       */
+/*   Updated: 2024/10/26 20:34:49 by parden           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../../libft.h"
 
 static bool	ft_isspace(int c)
 {

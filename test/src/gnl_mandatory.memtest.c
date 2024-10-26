@@ -1,7 +1,7 @@
 #include <criterion/criterion.h>
 #include <stdio.h>
 #include <fcntl.h>
-#include "libft.h"
+#include "../../libft.h"
 
 Test(gnl_mandatory, single_line_text)
 {

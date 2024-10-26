@@ -6,11 +6,11 @@
 /*   By: parden <parden@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/11 15:09:44 by parden            #+#    #+#             */
-/*   Updated: 2024/05/23 13:21:48 by parden           ###   ########.fr       */
+/*   Updated: 2024/10/26 20:34:36 by parden           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../../libft.h"
 #include <stdlib.h>
 
 //Behaviour is undefined for start > strlen(s)

@@ -6,7 +6,7 @@
 /*   By: parden <parden@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/30 12:09:52 by parden            #+#    #+#             */
-/*   Updated: 2024/09/24 20:11:33 by parden           ###   ########.fr       */
+/*   Updated: 2024/10/26 20:36:51 by parden           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 #include <stdio.h>
 #include <signal.h>
 #include <criterion/criterion.h>
-#include "libft.h"
+#include "../../libft.h"
 
 Test(strtol, atoi_like)
 {

@@ -5,7 +5,7 @@
 #include <limits.h>
 #include <signal.h>
 #include <criterion/criterion.h>
-#include "libft.h"
+#include "../../libft.h"
 
 Test(strnstr, streustreu_la_street)
 {

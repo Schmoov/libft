@@ -6,11 +6,11 @@
 /*   By: parden <parden@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/11 15:31:27 by parden            #+#    #+#             */
-/*   Updated: 2024/05/31 14:39:20 by parden           ###   ########.fr       */
+/*   Updated: 2024/10/26 20:34:49 by parden           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../../libft.h"
 #include <stdlib.h>
 
 char	*ft_strtrim(char const *s1, char const *set)

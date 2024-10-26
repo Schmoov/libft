@@ -6,12 +6,12 @@
 /*   By: parden <parden@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/30 11:16:12 by parden            #+#    #+#             */
-/*   Updated: 2024/05/17 15:01:05 by parden           ###   ########.fr       */
+/*   Updated: 2024/10/26 20:34:49 by parden           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
-#include "libft.h"
+#include "../../libft.h"
 
 char	*ft_strdup(const char *s)
 {

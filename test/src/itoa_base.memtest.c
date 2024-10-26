@@ -1,6 +1,6 @@
 #include <criterion/criterion.h>
 #include <stdio.h>
-#include "libft.h"
+#include "../../libft.h"
 
 void	itoa_tester(int n, char *base, bool is_signed, char *expected)
 {

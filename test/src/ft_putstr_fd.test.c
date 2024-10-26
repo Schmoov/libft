@@ -4,7 +4,7 @@
 #include <stdio.h>
 #include <limits.h>
 #include <fcntl.h>
-#include "libft.h"
+#include "../../libft.h"
 
 Test(putstr_fd, putstr_in_file)
 {

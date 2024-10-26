@@ -6,11 +6,11 @@
 /*   By: parden <parden@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/23 08:37:28 by parden            #+#    #+#             */
-/*   Updated: 2024/05/18 18:22:31 by parden           ###   ########.fr       */
+/*   Updated: 2024/10/26 20:34:42 by parden           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../../libft.h"
 
 int	ft_isalnum(int c)
 {

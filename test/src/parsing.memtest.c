@@ -6,13 +6,13 @@
 /*   By: parden <parden@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/26 11:45:29 by parden            #+#    #+#             */
-/*   Updated: 2024/06/04 18:22:39 by parden           ###   ########.fr       */
+/*   Updated: 2024/10/26 20:36:51 by parden           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <criterion/criterion.h>
 #include <stdio.h>
-#include "libft.h"
+#include "../../libft.h"
 
 Test(count_tok, mandatory)
 {

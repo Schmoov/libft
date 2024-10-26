@@ -2,7 +2,7 @@
 #include <limits.h>
 #include <stdio.h>
 #include <criterion/criterion.h>
-#include "libft.h"
+#include "../../libft.h"
 
 Test(ctype, isalnum)
 {
